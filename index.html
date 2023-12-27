@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        font-family: 'Press Start 2P', sans-serif;
+        
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- red container  -->
+
+    <div style="position: relative; display: inline-block;">
+
+      <!-- smaller red container -->
+
+      <div style="position: absolute; display: flex; width: 100%; align-items: center; padding:20px ;" >
+
+        <!-- Player health -->
+        <div style="position: relative; background-color: yellow;  height: 30px; width: 100%; display: flex; justify-content: flex-end;  border: 5px solid white;">
+          
+          
+
+        <div id="playerHealth" style="background-color: red; height: 20px; width: 100%; "></div>
+      </div>
+
+        <!-- timer -->
+
+        <div id="timer" style="background-color: white; height: 100px; width: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 30px; border-radius: 5px;">10</div>
+
+        <!-- Enemy Health -->
+        <div style="position: relative; background-color: yellow;  height: 30px; width: 100%;  border: 5px solid white; ">
+
+        <div style="background-color: yellow;"></div>
+
+        <div id="enemyHealth"  style="background-color: blue; width: 100% ; height: 20px;"></div>
+       </div>
+      </div>
+      <div style="display: flex; position: absolute; align-items: center; justify-content: center; height: 400px; width: 400px;  left: 320px; top: 100px;">
+        <p id="tie" style="color: white; font-size: 30px;"></p>
+      </div>
+        
+        <canvas>
+
+        </canvas>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/Javascript/classes.js"></script>
+    <script src="/Javascript/index.js"></script>
+</body>
+</html>
