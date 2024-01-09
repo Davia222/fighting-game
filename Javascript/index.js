@@ -31,7 +31,7 @@ const shop = new Sprite({
 
 const player  = new Fighter({
     position:{
-    x:0,
+    x:70,
     y:0
 },
 velocity:{
@@ -43,42 +43,42 @@ offset:{
     x:0,
     y:0
 },
-imageSrc:"/Assets/samuraiMack/Idle.png",
-scale:2.5,
+imageSrc:"/Assets/Medieval Warrior Pack/Idle.png",
+scale:2,
 frameMax:8,
 offset:{
     x:215,
-    y:157,
+    y:100,
 },
 sprites:{
     idle:{
-        imageSrc: "/Assets/samuraiMack/Idle.png",
-        frameMax :8
+        imageSrc: "/Assets/Medieval Warrior Pack/Idle.png",
+        frameMax :6
     },
     run:{
-        imageSrc: "/Assets/samuraiMack/Run.png",
+        imageSrc: "/Assets/Medieval Warrior Pack/Run.png",
         frameMax :8
     },
     jump:{
-        imageSrc: "/Assets/samuraiMack/Jump.png",
+        imageSrc: "/Assets/Medieval Warrior Pack/Jump.png",
         frameMax : 2
     },
     fall:{
-        imageSrc: "/Assets/samuraiMack/Fall.png",
+        imageSrc: "/Assets/Medieval Warrior Pack/Fall.png",
         frameMax : 2
     },
     attack1:{
-        imageSrc: "/Assets/samuraiMack/Attack1.png",
-        frameMax : 6
+        imageSrc: "/Assets/Medieval Warrior Pack/Attack1.png",
+        frameMax : 4
     },
     takeHit:{
-    imageSrc : "/Assets/samuraiMack/takeHit.png",
-    frameMax : 4
+    imageSrc : "/Assets/Medieval Warrior Pack/Hit.png",
+    frameMax : 3
     },
 
     death:{
-        imageSrc : "/Assets/samuraiMack/Death.png",
-        frameMax : 6
+        imageSrc : "/Assets/Medieval Warrior Pack/Death.png",
+        frameMax : 9
     }
 
 },
@@ -111,7 +111,7 @@ offset:{
     y:0
 },
 
-imageSrc:"/Assets/kenji/Idle.png",
+imageSrc:"/Assets/Sprite/Idle.png",
 scale:2.5,
 frameMax:4,
 offset:{
@@ -290,7 +290,7 @@ if( rectangularcollision({
     rectangle1: player,
     rectangle2: enemy
 })&&
-     player.isAttacking && player.frameCurrent=== 4 ){
+     player.isAttacking && player.frameCurrent=== 1){
      
     enemy.takeHit()    
     player.isAttacking = false
