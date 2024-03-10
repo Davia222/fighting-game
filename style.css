@@ -1,0 +1,28 @@
+
+.this{
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    visibility:hidden;
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+
+@media screen and (max-width:1024px) {
+
+   canvas{
+    display: none;
+   }
+
+   div{
+    color: white;
+   }
+
+   .this{
+    visibility: visible;
+    margin-top: 150px;
+   }
+   
+
+}
