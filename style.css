@@ -11,6 +11,10 @@
 
 @media screen and (max-width:1024px) {
 
+    html{
+        overflow-x: hidden;
+    }
+
    canvas{
     display: none;
    }
@@ -22,7 +26,21 @@
    .this{
     visibility: visible;
     margin-top: 150px;
+    font-size: 20px;
+    width: 300px;
+    /* border: 2px solid black; */
    }
+}
+
+   @media screen and (max-width:480px) {
+
+    html{
+        overflow:hidden;
+    }
+
+    body{
+        overflow:hidden;
+    }
+}
    
 
-}
